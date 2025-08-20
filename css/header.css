@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+
+/* 상단 */
+header {
+  width: 100%;
+  background-color: #82bc38;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 상단 로고 */
+.header-logo {
+  width: 15%;
+  max-width: 140px;
+  min-width: 130px;
+  /* background-color: aqua; */
+  height: 100%;
+  text-align: center;
+}
+
+/* 상단 로고 이미지 */
+.header-logo img {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.header-bg {
+  width: 100%;
+  height: 0px;
+  background-color: #1e73be;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+/* 상단 메뉴 */
+nav {
+  width: 60%;
+  position: relative;
+}
+
+/* 상단 메뉴 큰 카테고리 */
+.menu-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  height: 70px;
+}
+
+.menu-list > li {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+.menu-list > li > a {
+  line-height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.menu-list > li:hover > a {
+  color: #ffd700;
+}
+
+.menu-list > li a:last-child:hover ~ .header-bg {
+  display: none !important;
+}
+
+.menu-list2 {
+  z-index: 10;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: none;
+  gap: 50px;
+  width: 100%;
+  line-height: 70px;
+  transition: all 0.2s;
+}
+
+.menu-list2 > li > a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu-list2 > li > a:hover {
+  color: #ffd700;
+}
+
+/* 큰 카테고리 호버했을 때 */
+.menu-list > li:hover .menu-list2 {
+  display: flex;
+}
+
+/* plan list */
+.menu-list3 {
+  z-index: 10;
+  position: absolute;
+  top: 70px;
+  left: 180px;
+  display: none;
+  gap: 5px;
+  width: 100%;
+  line-height: 70px;
+}
+
+.menu-list3 > li {
+  padding-left: 10%;
+}
+
+.menu-list3 > li > a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu-list3 > li > a:hover {
+  color: #ffd700;
+}
+
+/* 큰 카테고리 호버했을 때 */
+.menu-list > li:hover .menu-list3 {
+  display: flex;
+}
+
+/* contact list */
+.menu-list4 {
+  z-index: 10;
+  position: absolute;
+  top: 70px;
+  left: 365px;
+  display: none;
+  width: 100%;
+  line-height: 70px;
+}
+
+.menu-list4 > li {
+  padding-left: 10%;
+}
+
+.menu-list4 > li > a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu-list4 > li > a:hover {
+  color: #ffd700;
+}
+
+/* 큰 카테고리 호버했을 때 */
+.menu-list > li:hover .menu-list4 {
+  display: flex;
+}
+
+/* search box */
+.search-box {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-box.active {
+  display: block;
+}
+
+/* header icon */
+.header-icon {
+  display: flex;
+  gap: 50px;
+  padding-right: 5%;
+}
+
+.header-icon a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+.header-icon a img {
+  width: 100%;
+}

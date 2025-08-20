@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@import url("header.css");
+@import url("main.css");
+
+.legal-wrap {
+  position: relative;
+  top: 0;
+  left: 150px;
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+  text-align: center;
+  max-width: 1650px;
+  padding: 90px;
+}
+
+.btn-wrap1 {
+  background-color: #006ba8;
+}
+
+.btn-wrap1,
+.btn-wrap2 {
+  width: 144px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-wrap1 a,
+.btn-wrap2 a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.btn-wrap2 {
+  background-color: #111111;
+}
+
+.legal-txt {
+  font-size: 13px inline-block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  text-align: left;
+  column-count: 3;
+  column-gap: 30px;
+}

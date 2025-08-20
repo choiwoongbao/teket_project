@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+.banner-part {
+  position: relative;
+  width: 1760px;
+  height: 973px;
+}
+
+/* banner header */
+.banner-header {
+  width: 100%;
+  height: 244px;
+  background-color: #82bc38;
+  margin-top: 200px;
+  margin-left: 80px;
+}
+
+/* banner left logo */
+.banner-logo {
+  width: 50%;
+  height: 100%;
+}
+
+/*  banner left logo font*/
+.banner-header-left {
+  font-size: 80px;
+  line-height: 80px;
+  margin-left: 40px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+/* banner header logo font */
+.banner-header-left a {
+  color: #000000;
+}
+
+/* banner right */
+.banner-right {
+  display: flex;
+  justify-content: space-around;
+  width: 328px;
+  height: 172px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 36px;
+  right: -40px;
+}
+
+.banner-header-right {
+  font-size: 90px;
+  line-height: 60px;
+  padding: 20px;
+}
+
+/* banner right font */
+.banner-header-right a {
+  color: #d62828;
+}
+
+
+/* banner-center */
+.banner-center{
+    width: 1760px;
+    height: 730px;
+    background-color: #1e73be;
+    margin-left: 80px;
+}
+
+/* banner-center-left */
+.banner-center-left{
+
+}
+
+.banner-center-left img{
+    width: 550px;
+    height: 550px;
+}
+  <!-- banner part -->
+      <div class="banner-part">
+        <!-- banner header -->
+        <div class="banner-header">
+          <!-- banner header logo -->
+          <div class="banner-logo">
+            <h2 class="banner-header-left">
+              <a href="#"
+                >Welcome noob <br />
+                check in</a
+              >
+            </h2>
+          </div>
+
+          <!-- banner header right -->
+          <div class="banner-right">
+            <h2 class="banner-header-right">
+              <a href="#"
+                >teket <br />
+                .com</a
+              >
+            </h2>
+          </div>
+        </div>
+
+        <!-- banner center -->
+        <div class="banner-center">
+          <div class="banner-center-left">
+            <!-- banner center left -->
+            <a href="#">
+              <img src="./img/earth icon.png" alt="banner earth icon img" />
+            </a>
+          </div>
+          
+          <!-- banner center right txt-->
+          <div class="banner-txt">
+            <p>
+              IT IS IMPORTAN PART OF OUR <br />
+              ENERGY CONVERSION PROCESS <br />
+              "TAKE WITH A GRAIN OF SALT"
+            </p>
+          </div>
+        </div>
+
+        <!-- banner center right icon, phone -->
+        <div class="banner-icon">
+          <!-- <img src="./img/phone.png" alt="banner phone icon" />
+          <p>524 - 1235</p>
+          <img src="./img/postbox icon.png" alt="banner postbox icon" />
+          <p>Post Box 16044</p>
+          <img src="./img/computer icon.png" alt="banner computer icon" /> -->
+          <p>Taket.Com</p>
+        </div>
+
+        <!-- banner footer -->
+        <div class="banner-footer">
+          <!-- banner footer left -->
+          <p>welcome noob</p>
+          <!-- banner footer right -->
+          <p>PUBLIC DISPLAY OF TEKET.COM</p>
+        </div>
+      </div>

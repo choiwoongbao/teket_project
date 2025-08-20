@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.new-part {
+  width: 1760px;
+  /* background-color: bisque; */
+}
+
+.new-part h1 {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+
+.new-list {
+  margin-top: 40px;
+  margin-left: 80px;
+  width: 275px;
+  height: 366px;
+  display: flex;
+  gap: 95px;
+}
+
+/* new list img */
+.new-list img {
+  width: 100%;
+  display: block;
+   transition: opacity 0.3s ease;
+}
+
+.new-list img:hover {
+  opacity: 0.8;
+}
+
+/* new part img txt and price */
+.new-list p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.price-txt {
+  width: 275px;
+}
+
+/* 할인 전 가격 폰트 */
+.price1 {
+  color: #d6d6d6;
+  font-weight: lighter;
+  text-decoration: line-through;
+  font-size: 20px;
+}
+
+/* 할인 후 가격 폰트 */
+.price2 {
+  color: #82bc38;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+

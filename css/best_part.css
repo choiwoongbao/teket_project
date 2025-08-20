@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* best part */
+.best-part {
+  width: 1760px;
+}
+
+.best-list {
+  margin-top: 40px;
+  margin-left: 80px;
+  height: 366px;
+  display: flex;
+  gap: 95px;
+}
+
+.best-list a{
+width: 275px;
+/* 줄어들지 않게 유지 */
+flex-shrink: 0;
+}
+
+/* best list img */
+.best-list img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.best-part img:hover {
+  opacity: 0.8;
+}
+
+/* best part p태그 */
+.best-tille {
+  font-size: 40px;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+}
+
+/* new part img txt and price */
+.best-list p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.price-txt{
+  width: 275px;
+}
+
+/* SOLD OUT 강조 */
+.price3 {
+  color: #d62828;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 20px;
+}
