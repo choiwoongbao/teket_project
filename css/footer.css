@@ -22,16 +22,36 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .footer-list li {
   width: calc(100% / 6);
   text-align: center;
-  padding-top: 10px
+  padding-top: 10px;
+  position: relative;
 }
 
 .footer-list li a:hover{
   color:#ffd700 ;
+}
+
+.info-list{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  color: #111111;
+  white-space: normal;
+  z-index: 10;
+  column-count: 2;
+
+}
+
+
+.footer-list li:first-child:hover .info-list {
+  display: flex;
 }
 
 .footer-site {

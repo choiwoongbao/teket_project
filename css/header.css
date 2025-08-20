@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 /* 상단 */
 header {
   width: 100%;
@@ -179,6 +178,45 @@ nav {
   display: block;
 }
 
+/* header lang */
+.kr-us {
+  display: flex;
+  gap: 1.6rem;
+  background-color: #ffd700;
+  height: 2.4rem;
+}
+
+.kr {
+  /* background-color: #fff; */
+}
+
+.kr a {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #006ba8;
+  gap: 0.3rem;
+}
+
+.us {
+  background-color: #ca3625;
+}
+
+.us a {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  gap: 0.3rem;
+}
+
+.kr a span, .us a span{
+  display: inline;
+}
 /* header icon */
 .header-icon {
   display: flex;

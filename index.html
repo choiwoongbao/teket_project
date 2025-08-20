@@ -26,6 +26,10 @@
     <meta property="og:image" content="https://choiwoongbao.github.io/teket_project/img/Teket%20titlle.png" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="teket | 테켓 웹사이트입니다." />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <script src="./js/cart.js"></script>
+
+
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js"></script>
 
@@ -117,8 +121,21 @@
 
         <!-- 상단 오른쪽 아이콘 -->
         <div class="header-icon">
+          <div class="kr-us">
+            <a href="#" class="kr">
+              <span>KRW</span>
+              <span>|</span>
+              <span>₩</span>
+            </a>
+            <a href="#" class="us">
+              <span>USD</span>
+              <span>|</span>
+              <span>$</span>
+            </a>
+          </div>
           <a href="#">
             <img src="./img/Language icon.png" alt="Language 아이콘" />
+            
           </a>
           <a href="./login.html">
             <img src="./img/User icon.png" alt="User 아이콘" />
@@ -306,7 +323,24 @@
       <footer>
         <nav class="footer-wrap">
           <ul class="footer-list">
-            <li><a href="#">lnformation</a></li>
+            <li>
+              <a href="https://choiwoongbao.github.io/teket_project/" >lnformation</a>
+              <ul class="info-list">
+                <li><span>주식회사 티시</span><i>/</i> </li>
+                  <li><span>04072 서울 마포구 성지1길 39 5층</span> <i>/</i></li>
+                  <li><span>대표이사 : 천혜민, 박경진</span> <i>/</i></li>
+                  <li><span>사업자등록번호 : 735-88-02529</span> <i>/</i></li>
+                  <li><span>통신판매업신고 : 2023-서울마포-1871</span> <i>/</i></li>
+                  <br />
+                  
+                  <li><span
+                    >개인정보관리책임 : 천혜민(info@te-ket.com)호스팅제공 :
+                    카페24(주)</span><i>/</i></li> 
+                  <li> <span>E-Mail : info@te-ket.com</span> <i>/</i></li>
+              <li><span>Tel : 070-8899-0711</span> <i>/</i></li>
+                  <li><span>입금계좌 : 우리은행 1005-804-512339 주식회사 티시(TishINC.)</span> <i>/</i></li>
+              </ul>
+            </li>
             <li><a href="./legal.html">Legal</a></li>
             <li>
               <a href="https://www.instagram.com/teket_com/" target="_blank"
@@ -319,6 +353,7 @@
               >
             </li>
           </ul>
+
         </nav>
         <div class="footer-site"><span>©</span>Teket.com</div>
       </footer>

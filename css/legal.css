@@ -6,12 +6,13 @@
 .legal-wrap {
   position: relative;
   top: 0;
-  left: 150px;
+  left: 100px;
   display: flex;
   gap: 3%;
   justify-content: center;
   text-align: center;
   max-width: 1650px;
+  min-width: 100vh;
   padding: 90px;
 }
 
@@ -38,10 +39,11 @@
 }
 
 .legal-txt {
-  font-size: 13px inline-block;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
   width: 100%;
   max-width: 100%;
-  height: auto;
   text-align: left;
   column-count: 3;
   column-gap: 30px;
