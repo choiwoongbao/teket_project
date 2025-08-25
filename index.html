@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>teket | 테켓</title>
 
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js"></script>
+
     <!-- seo 엔진 최적화 -->
     <!-- 웹페이지의 설명을 정의 -->
     <meta name="description" content="teket | 테켓 웹사이트입니다." />
@@ -21,33 +24,41 @@
     <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 
      페이지의 간략한 설명을 제공하는 데 사용 -->
     <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
-    <meta property="og:url" content="https://choiwoongbao.github.io/teket_project/" />
+    <meta property="og:url" content="" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
-    <meta property="og:image" content="https://choiwoongbao.github.io/teket_project/img/Teket%20titlle.png" />
+    <meta
+      property="og:image"
+      content="https://choiwoongbao.github.io/teket_project/img/Teket%20titlle.png"
+    />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="teket | 테켓 웹사이트입니다." />
-    <link rel="stylesheet" href="./css/cart.css" />
-    <script src="./js/cart.js"></script>
-
-
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js"></script>
 
     <!-- 파비콘 적용 -->
     <link
       rel="icon"
       type="image/png"
-      href="./favicon/favicon-96x96.png"
+      href="favicon/favicon-96x96.png"
       sizes="96x96"
     />
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./favicon/apple-touch-icon.png"
+      href="favicon/apple-touch-icon.png"
     />
-    <link rel="manifest" href="./favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
 
     <!-- 폰트어썸 -->
     <link
@@ -71,6 +82,41 @@
           </a>
         </div>
 
+        <!-- 햄버거 버튼 -->
+        <div class="hamburger">
+          <a href="#" class="hamburgerBtn">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+        <div class="mobile-menu">
+          <div class="nv">
+            <ul>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Plan</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Search</a></li>
+            </ul>
+          </div>
+
+          <div class="m-only">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/teket_com/" target="_blank"
+                  >lnstagram</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@te-ket" target="_blank"
+                  >Youtube</a
+                >
+              </li>
+              <li>
+                <a href="https://pf.kakao.com/_Ztaxas" target="_blank">Kakao</a>
+              </li>
+              <li><a href="./legal.html">Legal</a></li>
+            </ul>
+          </div>
+        </div>
         <!-- 상단 메뉴 -->
         <nav>
           <ul class="menu-list">
@@ -107,13 +153,9 @@
             <li>
               <a href="#">Search</a>
               <div class="search-box">
-                <button>
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+                <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search for Keyword" />
-                <button>
-                  <i class="fa-solid fa-xmark"></i>
-                </button>
+                <i class="fa-solid fa-xmark"></i>
               </div>
             </li>
           </ul>
@@ -122,20 +164,27 @@
         <!-- 상단 오른쪽 아이콘 -->
         <div class="header-icon">
           <div class="kr-us">
-            <a href="#" class="kr">
-              <span>KRW</span>
-              <span>|</span>
-              <span>₩</span>
-            </a>
-            <a href="#" class="us">
-              <span>USD</span>
-              <span>|</span>
-              <span>$</span>
-            </a>
+            <div class="kr">
+              <a href="#">
+                <span>KRW</span>
+                <span>|</span>
+                <span>₩</span>
+              </a>
+            </div>
+            <div class="us">
+              <a href="#">
+                <span>USD</span>
+                <span>|</span>
+                <span>$</span>
+              </a>
+            </div>
           </div>
           <a href="#">
-            <img src="./img/Language icon.png" alt="Language 아이콘" />
-            
+            <img
+              src="./img/Language icon.png"
+              alt="Language 아이콘"
+              class="language-icon"
+            />
           </a>
           <a href="./login.html">
             <img src="./img/User icon.png" alt="User 아이콘" />
@@ -154,6 +203,16 @@
           <img src="./img/Main img.png" alt="테켓의 메인 이미지" />
         </a>
       </div>
+
+      <!-- 마케팅 이벤트 -->
+      <!-- <div class="layer-pop">
+        <div class="pop">
+          <i class="fa-light fa-xmark"></i>
+          <a href="#">
+            <img src="./img/[teket] plan 24 img.jpg" alt="plan img">
+          </a>
+        </div>
+       </div> -->
 
       <!-- new part -->
       <div class="new-part">
@@ -324,22 +383,26 @@
         <nav class="footer-wrap">
           <ul class="footer-list">
             <li>
-              <a href="https://choiwoongbao.github.io/teket_project/" >lnformation</a>
-              <ul class="info-list">
-                <li><span>주식회사 티시</span><i>/</i> </li>
-                  <li><span>04072 서울 마포구 성지1길 39 5층</span> <i>/</i></li>
-                  <li><span>대표이사 : 천혜민, 박경진</span> <i>/</i></li>
-                  <li><span>사업자등록번호 : 735-88-02529</span> <i>/</i></li>
-                  <li><span>통신판매업신고 : 2023-서울마포-1871</span> <i>/</i></li>
-                  <br />
-                  
-                  <li><span
-                    >개인정보관리책임 : 천혜민(info@te-ket.com)호스팅제공 :
-                    카페24(주)</span><i>/</i></li> 
-                  <li> <span>E-Mail : info@te-ket.com</span> <i>/</i></li>
-              <li><span>Tel : 070-8899-0711</span> <i>/</i></li>
-                  <li><span>입금계좌 : 우리은행 1005-804-512339 주식회사 티시(TishINC.)</span> <i>/</i></li>
-              </ul>
+              <a href="#">lnformation</a>
+              <div class="info-list">
+                <div class="info-list">
+                  <p class="address">
+                    <span>주식회사 티시</span><i>/</i>
+                    <span> 04072 서울 마포구 성지1길 39 5층</span><i>/</i>
+                    <span> 대표이사 : 천혜민, 박경진</span><i>/</i>
+                    <span> 사업자등록번호 : 735-88-02529</span><i>/</i>
+                    <span> 통신판매업신고 : 2023-서울마포-1871</span><br />
+                    <span> 개인정보관리책임 : 천혜민(info@te-ket.com) </span>
+                    <span> 호스팅제공 : 카페24(주)</span><i>/</i>
+                    <span> E-Mail :info@te-ket.com></span><i>/</i>
+                    <span> Tel : 070-8899-0711</span><i>/</i>
+                    <span>
+                      입금계좌 : 우리은행 1005-804-512339 주식회사 티시(Tish
+                      INC.)</span
+                    >
+                  </p>
+                </div>
+              </div>
             </li>
             <li><a href="./legal.html">Legal</a></li>
             <li>
@@ -353,7 +416,6 @@
               >
             </li>
           </ul>
-
         </nav>
         <div class="footer-site"><span>©</span>Teket.com</div>
       </footer>

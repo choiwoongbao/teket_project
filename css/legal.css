@@ -18,6 +18,12 @@
 
 .btn-wrap1 {
   background-color: #006ba8;
+  border: #006ba8;
+}
+
+.btn-wrap2 {
+  background-color: #111111;
+  border: #111111;
 }
 
 .btn-wrap1,
@@ -26,16 +32,10 @@
   height: 40px;
   border-radius: 10px;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
-}
-
-.btn-wrap1 a,
-.btn-wrap2 a {
   color: #fff;
-  font-size: 20px;
-}
-
-.btn-wrap2 {
-  background-color: #111111;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .legal-txt {

@@ -137,7 +137,7 @@ nav {
   z-index: 10;
   position: absolute;
   top: 70px;
-  left: 365px;
+  left: 200px;
   display: none;
   width: 100%;
   line-height: 70px;
@@ -166,57 +166,87 @@ nav {
 .search-box {
   display: none;
   position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
+  top: 80px;
+  left: 70px;
+  width: 80%;
   background: #fff;
+  border-radius: 5px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 15;
 }
 
-.search-box.active {
+/* Search 메뉴에 마우스 올릴 떄 검색창 표시 */
+.menu-list > li:last-child:hover .search-box {
   display: block;
+}
+
+.search-box {
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  margin-left: 3%;
+}
+
+.fa-magnifying-glass {
+  font-size: 21px;
+}
+
+.fa-xmark {
+  font-size: 21px;
+}
+
+.search-box input {
+  width: 80%;
+  padding-top: 1%;
+  font-size: 15px;
 }
 
 /* header lang */
 .kr-us {
-  display: flex;
-  gap: 1.6rem;
-  background-color: #ffd700;
-  height: 2.4rem;
+  display: none;
+  position: absolute;
+  right: 300px;
+  top: 5px;
+  padding: 10px;
+  min-width: 100px;
+  gap: 10px;
 }
 
 .kr {
-  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 40px;
+  background-color: #006ba8;
+  margin-bottom: 8px;
+  border-radius: 10px;
 }
 
-.kr a {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #006ba8;
-  gap: 0.3rem;
+.kr span {
+  color: #fff;
+  font-weight: 500;
+  padding-left: 20%;
+  padding-top: 5%;
 }
 
 .us {
-  background-color: #ca3625;
-}
-
-.us a {
-  display: inline-flex;
-  flex-wrap: nowrap;
+  display: flex;
   align-items: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  gap: 0.3rem;
+  width: 70px;
+  height: 40px;
+  background-color: #111111;
+  margin-bottom: 8px;
+  border-radius: 10px;
 }
 
-.kr a span, .us a span{
-  display: inline;
+.us span {
+  color: #fff;
+  font-weight: 500;
+  padding-left: 25%;
+  padding-top: 5%;
 }
+
 /* header icon */
 .header-icon {
   display: flex;
@@ -230,6 +260,115 @@ nav {
   height: 30px;
 }
 
+/* .language-icon:hover .kr-us{
+  display: flex;
+} */
+
 .header-icon a img {
   width: 100%;
+}
+
+/* 햄버거 버튼 */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.fa-bars {
+  color: #000;
+}
+
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #82bc38;
+  color: #111111;
+  padding: 20px;
+  z-index: 9999999;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  display: none;
+}
+
+.nv {
+  padding-left: 2%;
+}
+
+.nv > ul > li > a {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.m-only {
+  padding-left: 2%;
+  padding-top: 5%;
+}
+
+.m-only > ul > li > a {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mobile-menu.show {
+  display: block;
+  transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    /* background-color: #fff; */
+    height: 70px;
+    padding-left: 3%;
+  }
+
+  /* 전부 숨김 */
+  nav,
+  .kr-us,
+  .header-bg {
+    display: none !important;
+  }
+
+  .header-logo {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: auto;
+  }
+
+  /* 아이콘 전부 숨겼다가 */
+  .header-icon a {
+    display: none !important;
+  }
+
+  .header-icon > a[href*="login"],
+  .header-icon > a[href*="cart"] {
+    display: flex !important;
+  }
+
+  .header-icon {
+    gap: 50px;
+  }
+
+  .header-icon a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding-bottom: 1%;
+  }
+
+  .hamburger a {
+    font-size: 30px;
+    font-weight: 600;
+  }
 }

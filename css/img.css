@@ -11,4 +11,5 @@
 /* 메인 이미지 width */
 .main-img img{
     width: 100%;
+    display: block;
 }

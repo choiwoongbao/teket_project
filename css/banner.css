@@ -31,7 +31,7 @@
 .banner-left img {
   width: 100%;
   display: block;
-  filter: brightness(1.1);
+  /* filter: brightness(1.1); */
 }
 
 .banner-left p {
@@ -58,14 +58,14 @@
 .banner-right img {
   width: 100%;
   display: block;
-  filter: brightness(1.1);
+  /* filter: brightness(1.1); */
 }
 
 .banner-right p {
   z-index: 99;
   position: absolute;
-  bottom: 230px;
-  right: 380px;
+  bottom: 200px;
+  right: 370px;
   color: #fff;
   font-size: 30px;
   opacity: 0;
